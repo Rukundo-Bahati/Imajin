@@ -1,0 +1,34 @@
+@media screen and (max-width: 560px) {
+    .features-container {
+    flex-direction: column;
+    justify-content: center;
+    }
+}
+
+.features-container {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature-image {
+        width: 100%;
+    }
+  }
+  
+.features {
+    background: #22013d;
+}
