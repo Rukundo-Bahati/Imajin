@@ -1,16 +1,14 @@
-import React from 'react';
-
-const Scale = () => {
+interface Props {
+  img: string;
+}
+const Scale = ({ img }: Props) => {
   return (
     <section className="section">
       <div className="grid">
-        <div className="card" style={{ maxWidth: '200px' }}>
+        <div className="card">
           <div className="card-image">
             <figure className="image is-4by3">
-              <img
-                src="https://bulma.io/assets/images/placeholders/1280x960.png"
-                alt="Placeholder image"
-              />
+              <img src={img} alt="Placeholder image" />
             </figure>
           </div>
           <div className="card-content">
@@ -18,8 +16,9 @@ const Scale = () => {
               <div className="media-left">
                 <figure className="image is-48x48">
                   <img
-                    src="https://bulma.io/assets/images/placeholders/96x96.png"
+                    src={img}
                     alt="Placeholder image"
+                    style={{ borderRadius: "50%", height: "48px" }}
                   />
                 </figure>
               </div>
@@ -30,8 +29,8 @@ const Scale = () => {
             </div>
 
             <div className="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-              iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+              Pain itself is love, for it is love. Quisque nec iaculis mauris.
+              <a>@bulmaio</a>. <a href="#">#css</a>
               <a href="#">#responsive</a>
               <br />
               <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
@@ -40,7 +39,7 @@ const Scale = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Scale;
