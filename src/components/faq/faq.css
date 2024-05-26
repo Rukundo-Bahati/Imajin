@@ -1,4 +1,15 @@
 .btn {
-    background: linear-gradient(#00E5FF,#FFFFFF);
-    border-radius: 6px;
+  background: linear-gradient(#00e5ff, #ffffff);
+  border-radius: 6px;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 760px) {
+    .faq {
+        grid-template-columns: repeat(1,1fr);
+    }
 }

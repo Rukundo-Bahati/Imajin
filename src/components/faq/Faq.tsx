@@ -46,7 +46,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="is-flex is-justify-content-center">
+    <div className="faq">
       <div>
         <h1 className="is-size-3" style={{ width: "", color: "#fff" }}>
           Frequently Asked Questoins

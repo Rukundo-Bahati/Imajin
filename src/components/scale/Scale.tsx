@@ -3,7 +3,7 @@ interface Props {
 }
 const Scale = ({ img }: Props) => {
   return (
-    <section className="section">
+    <section className="section" style={{ maxWidth: "90%" }}>
       <div className="grid">
         <div className="card">
           <div className="card-image">

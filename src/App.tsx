@@ -2,7 +2,6 @@ import Slide from "./components/Slide";
 import Features from "./components/features/Features";
 import Header from "./components/header/Header";
 import Nav from "./components/navbar/Nav";
-import Scale from "./components/scale/Scale";
 import asset1 from "./assets/Asset 10@2x.png";
 import asset2 from "./assets/Asset 9@2x.png";
 import asset3 from "./assets/Asset 11.png";
@@ -10,9 +9,8 @@ import Develops from "./components/develops/Develops";
 import Community from "./components/community/Community";
 import Faq from "./components/faq/Faq";
 import Contribution from "./components/contribution/Contribution";
-import img1 from "./assets/img1.jpg";
-import img2 from "./assets/img2.jpg";
 import Footer from "./components/footer/Footer";
+import Scales from './components/scales/Scales'
 
 const App = () => {
   return (
@@ -27,10 +25,7 @@ const App = () => {
         <Slide heading="First Slide" paragraph="Second Slide" />
         <Slide heading="First Slide" paragraph="Second Slide" />
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)" }} >
-        <Scale img={img1}  />
-        <Scale img={img2} />
-      </div>
+      <Scales />
       <div>
         <div style={{ textAlign: "center", color: "white", margin: "2rem" }}>
           <h1>

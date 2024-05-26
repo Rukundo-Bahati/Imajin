@@ -16,7 +16,7 @@ const Contribution = () => {
           awesome new features, or help us squash bugs.
         </p>
         <div style={{ textAlign: "center" }}>
-          <button className="button is-link mr-6">START BUILDING</button>
+          <button className="button is-link mr-6 btn1">START BUILDING</button>
           <button className="button is-light">READ DOCUMENTATION</button>
         </div>
         <img src={img} alt="" />

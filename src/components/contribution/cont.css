@@ -1,4 +1,13 @@
 .cont {
-    background: linear-gradient(#84FFFF 0%, #D3C4EE 77%, #F8BBD0);
-    width: 50%;
+  background: linear-gradient(#84ffff 0%, #d3c4ee 77%, #f8bbd0);
+  width: 50%;
+}
+
+@media screen and (max-width: 760px) {
+  .cont {
+    width: 100%;
+  }
+  .btn1 {
+    margin-bottom: 1rem;
+  }
 }
